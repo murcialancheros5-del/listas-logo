@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="estilos.css">
+  <title>Inventario Interactivo</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ole&display=swap" rel="stylesheet">
+ 
+</head>
+
+<body>
+  <h1>Sistema de Inventario</h1>
+
+  <section class="card">
+    <h3>PRODUCTOS</h3>
+      <section class="form-grid">
+    
+    <label for="nombre">Nombre:</label>
+    <select id="nombre">
+        
+        <option value="">none</option>
+        <option value="pera">pera</option>
+        <option value="banano">banano</option>
+        <option value="uva">uva</option>
+        <option value="manzana_roja">manzana_roja</option>
+        <option value="mango">mango</option>
+        <option value="patilla">patilla</option>
+        <option value="tomate">tomate</option>
+        <option value="cebolla_larga">cebolla_larga</option>
+        <option value="papas">papas</option>
+        <option value="habichuela">habichuela </option>
+        <option value="arbeja">arbeja</option>
+        <option value="pimenton">pimenton </option>
+        <option value="acelga">acelga</option>
+        <option value="repollo">repollo</option>
+        <option value="lechuga">lechuga</option>
+        <option value="naranja">naranja</option>
+        <option value="zanahoria">zanahoria</option>
+        <option value="cebolla_cabezona">cebolla_cabezona</option>
+        <option value="pollo">pollo</option>
+        <option value="carne">carne</option>
+    </select>
+
+    <div class="producto-preview">
+        <img id="previewProducto" src="" alt="Producto">
+        <button id="btnAgregar" class="btn-form">Agregar</button>
+    </div>
+
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" />
+
+    <label for="precio">Precio unitario:</label>
+    <input type="number" id="precio" />
+
+</section>
+  </section>
+
+  <section class="card">
+    <h3>Inventario</h3>
+
+    <table id="tabla">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio</th>
+          <th>Total</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <section class="total" id="totalGeneral">Total general: $0</section>
+  </section>
+ <footer>
+    <p>&copy; 2026.Derechos reservados Andrea Murcia.</p></p>
+</footer>
+
+  <script src="codigo.js" defer></script>
+</body>
+
+</html>
