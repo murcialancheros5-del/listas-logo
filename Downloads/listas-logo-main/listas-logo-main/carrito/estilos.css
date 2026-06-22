@@ -1,0 +1,108 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #672cab;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows:min-content; 
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .producto {
+    background: #b70699;
+    border: 1px solid #af038a;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .producto img {
+    width: 90%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.4s ease;
+  }
+  
+  .producto h3 {
+    margin: 10px 0 5px;
+    font-size: 0.95em;
+  }
+  
+  .producto p {
+    margin: 5px 0;
+    font-weight: bold;
+  }
+  
+  .producto button {
+    padding: 5px 10px;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85em;
+  }
+  
+  .producto button:hover {
+    background-color: #495057;
+  }
+  
+  .carrito h2 {
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  thead {
+    background-color: #f1f1f1;
+  }
+  
+  tbody td[colspan="5"] {
+    text-align: left;
+    color: #666;
+    font-style: italic;
+  }
+
+  @media (max-width: 1024px) {
+    .productos {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 600px) {
+    .productos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .producto {
+      width: auto;
+    }
+  }
+  footer{
+    font-size: 10px;
+    text-align: center;
+}
+
