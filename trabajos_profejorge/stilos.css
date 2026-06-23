@@ -1,141 +1,31 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-family: cursive;
-  line-height: 1.5;
+body{
+  padding: 10px;
   background-image: url(imagen.png);
-  color: #000000f8;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-
-h1 {
+.caja_lider{
+  border: 2px solid ;
+  background-color: rgba(189, 90, 139, 0.836);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
   text-align: center;
-  color: rgba(223, 68, 153, 0.304);
-  border: 2px solid rgb(22, 118, 196);
-  padding: 10px;
-  border-radius: 15px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  
 }
-
-.container {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgb(255, 255, 255);
-  padding: 30px;
-  border: 3px solid rgb(18, 8, 201);
+h2{
+  color: rgb(45, 32, 56);
+  background-color: rgb(255, 71, 126);
+}
+li a{
+  background-color: rgb(165, 42, 83);
+  text-decoration: none;
+  padding: 10px;
+  gap: 20px;
   border-radius: 20px;
+  color: black;
 }
-
-.search {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-form {
-  display: flex;
-  border: 2px solid rgb(8, 175, 147);
-  padding: 8px;
-  border-radius: 15px;
-}
-
-input {
-  padding: 15px 10px;
-  outline: none;
-  width: 400px;
-  border: 2px solid rgb(102, 4, 182);
-  border-radius: 10px;
-}
-
-.li-container {
-  background-color: white;
-  width: 100%;
-  color: rgb(102, 4, 182);
-  margin-top: 20px;
-  border: 2px solid rgb(232, 4, 129);
-  padding: 10px;
-  border-radius: 15px;
-}
-
-ul {
-  padding: 0;
-}
-
-li {
-  list-style: none;
-  background-color: lightgray;
-  border-radius: 10px;
-  margin-top: 15px;
-  display: flex;
-  /* Borde a cada tarea */
-  border: 1px solid rgb(102, 4, 182);
-}
-
-li {
-    display: inline-block;
-    border: 1px solid purple;
-    padding: 2px 5px;
-}
-
-.btn-delete {
-  margin-left: auto;
-  border: none;
-  background-color: #e31746;
-  color: white;
-  font-weight: bold;
-  padding: 5px 10px;
-  outline: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 1.2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border: 2px solid white;
-}
-
-.btn-delete:hover {
-  cursor: pointer;
-  background-color: rgb(194, 10, 207);
-}
-
-.btn-add {
-  padding: 5px 15px;
-  border: none;
-  color: white;
-  font-family: fantasy;
-  background-color: teal;
-  font-size: 1.4rem;
-  outline: none;
-  /* Botón totalmente redondo */
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid rgb(226, 243, 2);
-  margin-left: 10px;
-}
-
-.btn-add:hover {
-  cursor: pointer;
-  background-color: darkcyan;
-}
-
-.empty {
-  color: rgb(206, 7, 96);
-  border: 1px solid darkslategrey;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
+li a:hover{
+  background-color: blueviolet;
 }
